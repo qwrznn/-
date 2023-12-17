@@ -1,0 +1,9 @@
+SELECT `Найменування товару`, `Продажі` FROM товарообіг WHERE Продажі=(SELECT  MAX(Продажі) FROM товарообіг)
+
+
+SELECT SUM(Ціна) FROM `товарообіг`
+
+SELECT * FROM `товарообіг` ORDER BY `Найменування товару` ASC
+
+SELECT * FROM `товарообіг` WHERE `Продажі` > 10
+AND `Ціна` BETWEEN 20 AND 90
